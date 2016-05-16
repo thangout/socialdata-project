@@ -25,7 +25,6 @@ month_converter = {
     'XI' : 'nov',
     'XII' : 'dec',
 }
-
 month_data = {
     'jan' : 0,
     'feb' : 0,
@@ -66,6 +65,11 @@ def parseAndStoreTimeString(row):
     hour = int(row_split[0])
     timeslot_data[hour] = timeslot_data[hour] + 1
 
+def writeDictToCsv(filename, data):
+    writer = csv.writer(open(filename+'.csv', 'wb'))
+    for key, value in data.items():
+        writer.writerow([key, value])
+
 
 
 with open('data/lfb_jan2013-mar2016.csv', 'rb') as csvfile:
@@ -75,8 +79,10 @@ with open('data/lfb_jan2013-mar2016.csv', 'rb') as csvfile:
         parseAndStoreTimeString(row[2])
 
 
+writeDictToCsv('year_data', year_data)
 
-print year_data
-print month_data
-print day_data
-print timeslot_data
+writeDictToCsv('month_data', month_data)
+
+writeDictToCsv('day_data', day_data)
+
+writeDictToCsv('timeslot_data', timeslot_data)
