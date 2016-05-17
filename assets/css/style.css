@@ -23,8 +23,13 @@
     border-color: #FFFFFF !important;
 }
 
+.btn-white:hover {
+    background-color: #FFFFFF !important;
+    color: #EB5E28 !important;
+}
+
 .orange-hover:hover {
-	color: #EB5E28 !important;
+	 color: #EB5E28 !important;
     border-color: #EB5E28 !important;	
 }
 
@@ -47,4 +52,27 @@
 
 .white {
 	color: #FFFFFF;
+}
+
+.section {
+    min-height: 600px;
+}
+
+.section-icon {
+	font-size: 150px !important;
+}
+
+.contain {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.demo-header {
+    min-height: 750px;
+}
+
+.demo-header .motto {
+    padding-top: 40vh;
 }

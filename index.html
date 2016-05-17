@@ -11,16 +11,14 @@
     <meta name="viewport" content="width=device-width" />
     
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     
     <link href="assets/css/demo.css" rel="stylesheet" /> 
 
     <link href="assets/css/ct-paper.css" rel="stylesheet"/>
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom css by Thang and Picu -->
-    <link rel="stylesheet" href="assets/css/picu-style.css"> 
-    <link rel="stylesheet" href="assets/css/thang-style.css"> 
+    <link rel="stylesheet" href="assets/css/style.css"> 
         
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -68,52 +66,76 @@
     
     <div class="main">
         <div class="section section-nude" id="about">
-         <div class="container tim-container">
-            <div class="tim-title">
-                <h2>Motivation</h2>
+         <div class="contain tim-container">
+          <div class="row">
+              <div class="col-md-7 col-md-offset-1" style="margin-top: 10%;">
+                <div class="tim-title">
+                    <h2>Motivation</h2>
+                </div>
+                <p>
+                  We have chosen this dataset in order to investigate the patterns of fire incidents, and since London Fire Brigade in one of the largest and most busy fire departments in the globe, we figured this would be a great place to start. <br/>
+                  The dataset covers the years 2013, 2014 and 2015, as well as the first quarter of 2016. <br/>
+                  We shifted to this project from our previous since we found that the data was corrupted and our preliminary analysis could not find anything worth discussing. 
+                </p>
+              </div>
+              <div class="col-md-4 hidden-sm">
+                <i class="fa fa-bullhorn section-icon" aria-hidden="true" style="margin-left: 25%;margin-top: 40%;"></i>
+              </div>
             </div>
-            <p>
-              We have chosen this dataset in order to investigate the patterns of fire incidents, and since London Fire Brigade in one of the largest and most busy fire departments in the globe, we figured this would be a great place to start. <br/>
-              The dataset covers the years 2013, 2014 and 2015, as well as the first quarter of 2016. <br/>
-              We shifted to this project from our previous since we found that the data was corrupted and our preliminary analysis could not find anything worth discussing. 
-            </p>
+
+            <div class="row">
+              <div class="col-md-2 col-md-offset-1" style="margin-top: 5%;">
+                <button onclick="window.open('http://data.london.gov.uk/dataset/london-fire-brigade-incident-records', 'blank');" target="_blank" class="btn btn-danger btn-lg">Go to dataset</button>
+              
+              </div>
             
+            </div>
+
          </div>
         </div>
 
-        <div class="section white orange-section" id="about">
-           <div class="container tim-container">
-              <div class="tim-title">
-                  <h2>Basic stats</h2>
+        <div class="section white orange-section" id="simple_stats">
+          <div class="row">
+              <div class="col-md-4 hidden-sm">
+                <i class="fa fa-list section-icon" aria-hidden="true" style="margin-left: 30%;margin-top: 45%;"></i>
               </div>
-              <p>
-                The set is comprised of 26 colomns/parameters that we can put to the test, including:
-                <ul>
-                  <li>
-                    time 
-                  </li>
-                  <li>
-                    Date
-                  </li>
-                  <li>
-                    Location
-                  </li>
-                  <li>
-                    Type of incident
-                  </li>
-                  <li>
-                    Property type
-                  </li>
-                  <li>
-                    easting/northing location pointer
-                  </li>
+              <div class="col-md-7 col-md-offset-1" style="margin-top: 10%;">
+                <div class="contain tim-container">
+                    <div class="tim-title">
+                        <h2>Basic stats</h2>
+                    </div>
+                    <p>
+                      The set is comprised of 26 colomns/parameters that we can put to the test, including:
+                      <ul>
+                        <li>
+                          time 
+                        </li>
+                        <li>
+                          Date
+                        </li>
+                        <li>
+                          Location
+                        </li>
+                        <li>
+                          Type of incident
+                        </li>
+                        <li>
+                          Property type
+                        </li>
+                        <li>
+                          easting/northing location pointer
+                        </li>
 
-                </ul> 
+                      </ul> 
 
-                Beneath is a series of inital visualisations to show some basic features of the data.
-              </p>
-              
-           </div>
+                      Beneath is a series of inital visualisations to show some basic features of the data.
+                    </p>
+                    
+                 </div>
+                
+              </div>
+            </div>
+           
         </div>
 
     </div>
@@ -192,17 +214,34 @@
     
 </div> <!-- end wrapper -->
 
-    <!-- </div> -->
-    <div class="main">
-
-
-        <div class="section orange-section white section-with-space" id="machine_learning">
-            <div class="container tim-container">
+<!-- </div> -->
+<div class="main">
+    <div class="section orange-section white section-with-space" id="machine_learning">
+          <div class="contain tim-container">
+            <div class="row">
+            <div class="col-md-7 col-md-offset-1">
               <div class="tim-title">
-                    <h3 class="white">Machine learning </h3>
-                </div>  
-        </div>
+                  <h3 class="white">Machine learning </h3>
+              </div>
+              <p>
+                <!-- TEXT HERE -->
+              </p>
+            </div>
+            <div class="col-md-4 hidden-sm">
+              <i class="fa fa-graduation-cap section-icon" aria-hidden="true" style="margin-left: 25%;margin-top: 40%;"></i>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-2 col-md-offset-1" style="margin-top: 5%;">
+                <button onclick="window.open('http://nbviewer.jupyter.org/github/thangout/socialdata-project/blob/master/notebooks/explainer.ipynb', 'blank');" target="_blank" class="btn btn-white btn-lg"> Show me the notebook! </button>
+              </div>
+            
+          </div>
+
+       </div>
     </div>
+</div>
 
     <footer class="footer-demo section-dark">
     <div class="container">
@@ -229,12 +268,9 @@
 	
 	<script src="assets/js/ct-paper.js"></script>    
 
-<script src="assets/js/thang.js"></script>
-    <script src="assets/js/picu.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
 
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-
-    <script src="dist/js/plots.js"></script>
+  <script src="dist/js/plots.js"></script>
 
 </html>
 
