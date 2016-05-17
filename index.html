@@ -44,13 +44,13 @@
     <div class="collapse navbar-collapse" id="navigation-example-2">
       <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="components.html" class="btn btn-danger btn-simple">Components</a>
+            <a href="#about" class="btn btn-white orange-hover btn-simple">About</a>
           </li>
           <li>
-            <a href="tutorial.html" class="btn btn-danger btn-simple">Tutorial</a>
+            <a href="#simple_stats" class="btn btn-white orange-hover btn-simple">Simple statistics</a>
           </li>
           <li>
-            <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="btn btn-danger btn-fill">Download</a>
+            <a href="#machine_learning" class="btn btn-white orange-hover btn-simple">Machine Learning</a>
           </li>
        </ul>
     </div><!-- /.navbar-collapse -->
@@ -67,36 +67,63 @@
     </div>
     
     <div class="main">
-        <div class="section">
+        <div class="section section-nude" id="about">
          <div class="container tim-container">
             <div class="tim-title">
-                <h2>About the project</h2>
+                <h2>Motivation</h2>
             </div>
-        
+            <p>
+              We have chosen this dataset in order to investigate the patterns of fire incidents, and since London Fire Brigade in one of the largest and most busy fire departments in the globe, we figured this would be a great place to start. <br/>
+              The dataset covers the years 2013, 2014 and 2015, as well as the first quarter of 2016. <br/>
+              We shifted to this project from our previous since we found that the data was corrupted and our preliminary analysis could not find anything worth discussing. 
+            </p>
             
          </div>
         </div>
+
+        <div class="section white orange-section" id="about">
+           <div class="container tim-container">
+              <div class="tim-title">
+                  <h2>Basic stats</h2>
+              </div>
+              <p>
+                The set is comprised of 26 colomns/parameters that we can put to the test, including:
+                <ul>
+                  <li>
+                    time 
+                  </li>
+                  <li>
+                    Date
+                  </li>
+                  <li>
+                    Location
+                  </li>
+                  <li>
+                    Type of incident
+                  </li>
+                  <li>
+                    Property type
+                  </li>
+                  <li>
+                    easting/northing location pointer
+                  </li>
+
+                </ul> 
+
+                Beneath is a series of inital visualisations to show some basic features of the data.
+              </p>
+              
+           </div>
+        </div>
+
     </div>
     
-    <div class="section section-light-blue">
-            <div class="container">
-                                
-    </div>
 </div>
 
 <div class="wrapper">  
     <div class="main">
-        <div class="section section-nude">
-        <div class="container tim-container">
-                    
-                <div class="tim-title">
-                    <h3>Simple initial statistics</h3>
-                </div>
-            </div>
-        </div>
-    </div> <!-- end main -->
-    
-    <div id="carousel">
+
+        <div id="carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <div class="carousel slide" data-ride="carousel">
 
@@ -114,34 +141,34 @@
                   <div class="center-this" style="width: 600px;">
                     <h3> Year Data </h3>
                       <p>
-                        This plot shows the total number of fires for every year during the period supplied. This was to see whether there was a change in incidents during the period. This does not seem the case. The number of incidents for 2016 in naturally smaller since we are only a quarter through the year, datawise. 
+                        This plot shows the total number of incidents for every year during the period supplied. This was to see whether there was a change in incidents during the period. This does not seem the case. The number of incidents for 2016 in naturally smaller since we are only a quarter through the year, datawise. 
                       </p>
                       <div id="year-div"></div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="center-this" style="width: 600px;">
-                      <h3> Year Data </h3>
+                      <h3> Month data </h3>
                       <p>
-                        This plot shows the total number of fires for every year during the period supplied. This was to see whether there was a change in incidents during the period. This does not seem the case. The number of incidents for 2016 in naturally smaller since we are only a quarter through the year, datawise. 
+                        This plot shows the total number of incidents divided into months for all the three years combined. No months really stand out amoungst the crowd, although it does seem like there is a tendensy towards more fires happening in the beginning of the year. We have no theory on this. 
                       </p>
                       <div id="month-div"></div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="center-this" style="width: 600px;">
-                      <h3> Year Data </h3>
+                      <h3> Date of month data </h3>
                       <p>
-                        This plot shows the total number of fires for every year during the period supplied. This was to see whether there was a change in incidents during the period. This does not seem the case. The number of incidents for 2016 in naturally smaller since we are only a quarter through the year, datawise. 
+                        This plot shows the total number of incidents divided into each day of the month over the three years. The data seems evenly divided on the days, except for the 31st of the month. This i due to the fact that only half the months have a 31 days.
                       </p>
                       <div id="day-div"></div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="center-this" style="width: 600px;">
-                      <h3> Year Data </h3>
+                      <h3> Time slot data </h3>
                       <p>
-                        This plot shows the total number of fires for every year during the period supplied. This was to see whether there was a change in incidents during the period. This does not seem the case. The number of incidents for 2016 in naturally smaller since we are only a quarter through the year, datawise. 
+                        This plot shows the total number of incidents over the year, divided onto timeslots. This means that a fire happining at 14:30 will be in the 14-15 timeslot. Here is a much clearer tendensy. Fires are at their lowest during the night and early morning and clearly more frequent around supper. this is possibly becuase this is the times where you would cook with fire. 
                       </p>
                       <div id="time-div"></div>
                   </div>
@@ -157,19 +184,23 @@
               </a>
         </div>
     </div> <!-- end carousel -->
+
+
+    </div> <!-- end main -->
+    
+    
     
 </div> <!-- end wrapper -->
 
     <!-- </div> -->
     <div class="main">
-        <div class="section section-white section-with-space">
-            <div class="container tim-container text-center">
-                
-        </div>
-        <div class="section section-nude section-with-space">
+
+
+        <div class="section orange-section white section-with-space" id="machine_learning">
             <div class="container tim-container">
-              
-            </div>
+              <div class="tim-title">
+                    <h3 class="white">Machine learning </h3>
+                </div>  
         </div>
     </div>
 
@@ -206,3 +237,12 @@
     <script src="dist/js/plots.js"></script>
 
 </html>
+
+
+
+
+
+
+
+
+

@@ -13,3 +13,38 @@
 	margin: auto;
 	display: block;
 }
+
+.orange-section {
+	background-color: #EB5E28;
+}
+
+.btn-white {
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+
+.orange-hover:hover {
+	color: #EB5E28 !important;
+    border-color: #EB5E28 !important;	
+}
+
+.carousel-inner {
+     background-color: transparent; 
+}
+
+.section-nude {
+	background-color: #fff;
+	background-image: none; 	
+}
+
+.carousel-control.right {
+    right: 10%;
+}
+
+.carousel-control.left {
+    left: 10%;
+}
+
+.white {
+	color: #FFFFFF;
+}
