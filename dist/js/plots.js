@@ -36,7 +36,7 @@ function renderYearDataPlot() {
       .attr("transform", 
             "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.csv("../dist/data/year_data.csv", function(error, data) {
+  d3.csv("dist/data/year_data.csv", function(error, data) {
 
     x.domain(data.map(function(d) { return d.key; }));
     y.domain([0, d3.max(data, function(d) { return parseInt(d.value); })]);
@@ -99,7 +99,7 @@ function renderMonthDataPlot() {
       .attr("transform", 
             "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.csv("../dist/data/month_data.csv", function(error, data) {
+  d3.csv("dist/data/month_data.csv", function(error, data) {
     
     x.domain(data.map(function(d) { return d.key; }));
     y.domain([0, d3.max(data, function(d) { return parseInt(d.value); })]);
@@ -162,7 +162,7 @@ function renderDayDataPlot() {
       .attr("transform", 
             "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.csv("../dist/data/day_data.csv", function(error, data) {
+  d3.csv("dist/data/day_data.csv", function(error, data) {
     
     x.domain(data.map(function(d) { return d.key; }));
     y.domain([0, d3.max(data, function(d) { return parseInt(d.value); })]);
@@ -225,7 +225,7 @@ function renderTimeDataPlot() {
       .attr("transform", 
             "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.csv("../dist/data/timeslot_data.csv", function(error, data) {
+  d3.csv("dist/data/timeslot_data.csv", function(error, data) {
     
     x.domain(data.map(function(d) { return d.key; }));
     y.domain([0, d3.max(data, function(d) { return parseInt(d.value); })]);
