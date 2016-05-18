@@ -218,13 +218,16 @@
 <div class="main">
     <div class="section orange-section white section-with-space" id="machine_learning">
           <div class="contain tim-container">
-            <div class="row">
+           <div class="row">
             <div class="col-md-7 col-md-offset-1">
               <div class="tim-title">
                   <h3 class="white">Machine learning </h3>
               </div>
               <p>
-                <!-- TEXT HERE -->
+              Imagine the situation when there would be a fire stations cut down or planning of new places for them. We decided to use machine learning in order to predict and find the optimum location for such statitons. 
+              </p>
+              <p>
+                You can find the map just below this section. It illustrates the situation when we would have only between 2 - 6 fire stations available. Use buttons to switch between number of fire stations.
               </p>
             </div>
             <div class="col-md-4 hidden-sm">
@@ -238,9 +241,25 @@
               </div>
             
           </div>
-
        </div>
     </div>
+</div>
+
+<div class="container" style="padding-top: 20px; padding-bottom: 45px;text-align: center;">
+          <div class="row">
+            <h3 class="center">Suggested places for fire stations</h3>
+            <div class="col-md-7 col-md-offset-1">
+              <div id="js-londonmap"></div>     
+            </div>
+              <div class="col-md-12">
+                <button class="btn btn-primary" id="js-map-button1">2 stations</button>
+                <button class="btn btn-primary " id="js-map-button2">3 stations</button>
+                <button class="btn btn-primary " id="js-map-button3">4 stations</button>
+                <button class="btn btn-primary " id="js-map-button4">5 stations</button>
+                <button class="btn btn-primary " id="js-map-button5">6 stations</button>
+              </div>   
+          </div>
+</div>
 </div>
 
     <footer class="footer-demo section-dark">
@@ -271,6 +290,38 @@
   <script src="http://d3js.org/d3.v3.min.js"></script>
 
   <script src="dist/js/plots.js"></script>
+  <script src="dist/js/2d-kmeans.js"></script>
+
+     <script type="text/javascript">
+
+      $(document).on('ready', function() {
+        $("#js-barchartSwitch").click(function(){
+            switchBarchart();
+        });
+
+        $("#js-map-button1").click(function(){
+          repaintPoints(2);
+        });
+
+        $("#js-map-button2").click(function(){
+          repaintPoints(3);
+        });
+
+        $("#js-map-button3").click(function(){
+          repaintPoints(4);
+        });
+
+        $("#js-map-button4").click(function(){
+          repaintPoints(5);
+        });
+
+        $("#js-map-button5").click(function(){
+          repaintPoints(6);
+        });
+
+      });
+      
+    </script>
 
 </html>
 
